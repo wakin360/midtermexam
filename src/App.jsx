@@ -21,7 +21,6 @@ function Button({ label, className = "", onClick }) {
 }
 
 export default function App() {
-  // Requirement B: Initial state when app starts
   const [displayText, setDisplayText] = useState("10 Things That Require Zero Talent");
 
 
@@ -36,7 +35,7 @@ export default function App() {
     "8": "Doing A Little Extra",
     "9": "Being Prepared",
     "0": "Having A Strong Work Ethic",
-    "NAME": "JOAQUIN MANLASTAS",
+    "NAME": "JOAQUIN MANALASTAS",
     "SUBJ": "C-PCIT9"
   };
 
@@ -49,10 +48,8 @@ export default function App() {
   return (
     <div className="container">
       <div className="calculator">
-        {/* Requirement A: Full name and section at the top */}
-        <h1 className="header">JOAQUIN MANLASTAS - IT3A</h1>
+        <h1 className="header">JOAQUIN MANALASTAS - IT3A</h1>
         
-        {/* Display showing current state */}
         <Display value={displayText} />
 
         <div className="buttons">
